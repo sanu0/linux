@@ -179,4 +179,14 @@ config SAMPLE_RUST_HOSTPROGS
 
 	  If unsure, say N.
 
+config SAMPLE_RUST_HELLO
+	tristate "My hello world module"
+	help
+	  This option builds the Rust hello world module sample.
+
+	  To compile this as a module, choose M here:
+	  the module will be called hello_rust.
+
+	  If unsure, say N.
+
 endif # SAMPLES_RUST
